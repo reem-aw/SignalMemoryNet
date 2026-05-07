@@ -106,7 +106,7 @@ dimension 1 — directly mirroring the lecture's "10-sample context window".
   (patience = 5).
 * Best-checkpoint selection on validation loss.
 
-Run `python -m src.main --all --epochs 30` to retrain every model.
+Run `python -m src.main --model all --epochs 30` to retrain every model.
 
 ## 6. Results
 
@@ -145,6 +145,7 @@ pytest
 # Train + evaluate all three models and emit figures + metrics
 python -m src.main --model all --epochs 20
 
+```
 
 ## 8. Repository layout
 
@@ -168,12 +169,12 @@ report/
 
 ## 9. Submission
 
-Group: **SMNGRP05**, Exercise **1**, Self-score recommendation **90**.
+Exercise **1**
 
 | Student | ID | Name (EN) | Name (HE) |
 |---|---|---|---|
 | 1 | 208123232 | Afaf Gharra  | עפאף גרה |
 | 2 | 212018899 | Reem Awawdy  | רים עואודה |
 
-GitHub: <https://github.com/afaf-gharra/SignalMemoryNet>
+GitHub: <https://github.com/reem-aw/SignalMemoryNet>
 Late submission: **No**.
