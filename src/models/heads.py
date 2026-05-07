@@ -6,7 +6,7 @@ from typing import NamedTuple
 import torch
 from torch import nn
 
-from ..config import OUT_LOGITS, OUT_RECON, OUT_TOTAL
+from config.config import OUT_LOGITS, OUT_RECON, OUT_TOTAL
 
 
 class HeadOutput(NamedTuple):

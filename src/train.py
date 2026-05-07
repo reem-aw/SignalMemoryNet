@@ -8,7 +8,7 @@ import torch
 from torch import nn
 from torch.utils.data import DataLoader
 
-from .config import LAMBDA_CLS, LAMBDA_RECON, TrainConfig
+from config.config import LAMBDA_CLS, LAMBDA_RECON, TrainConfig
 
 
 @dataclass

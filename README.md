@@ -83,7 +83,7 @@ representation.
 
 Each item supplied to the network is a dict `{x_noisy, x_clean, y_class,
 y_onehot, sigma}`.  Train / val / test splits use 30 / 8 / 8 records per
-frequency by default (see [`src/config.py`](src/config.py)).
+frequency by default (see [`src/config.py`](config/config.py)).
 
 ## 4. Architectures
 

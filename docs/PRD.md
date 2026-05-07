@@ -25,3 +25,16 @@ Build a neural-network system that receives noisy sine-wave windows and performs
 - Reconstruction MSE
 - Confusion matrices
 - Reconstruction plots
+
+## Functional Requirements
+- Generate synthetic sine-wave signals.
+- Add configurable Gaussian noise.
+- Classify the signal frequency.
+- Reconstruct the clean signal.
+- Train and evaluate three neural-network architectures.
+
+## Acceptance Criteria
+- All models train successfully.
+- Test accuracy exceeds 95%.
+- Reconstruction MSE is low and stable.
+- Unit tests pass successfully.

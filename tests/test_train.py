@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import torch
 
-from src.config import TrainConfig
+from config.config import TrainConfig
 from src.data import make_dataloaders
 from src.evaluate import collect_predictions, confusion_matrix
 from src.models.mlp import MLPModel

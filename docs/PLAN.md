@@ -12,3 +12,10 @@
 10. Generate plots and metrics.
 11. Add unit tests.
 12. Prepare the final report and GitHub repository.
+
+## Architecture Decisions
+
+- Use PyTorch for all implementations.
+- Use a shared multi-task head for all models.
+- Use sliding windows of length 10.
+- Use MSE for reconstruction and CE for classification.

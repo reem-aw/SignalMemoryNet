@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Dict, List
+from typing import Dict
 
 import matplotlib
 
@@ -13,7 +13,7 @@ import torch  # noqa: E402
 from torch import nn  # noqa: E402
 from torch.utils.data import DataLoader  # noqa: E402
 
-from .config import FREQUENCIES_HZ, NOISE_LEVELS, NUM_CLASSES
+from config.config import FREQUENCIES_HZ, NOISE_LEVELS, NUM_CLASSES
 from .train import History
 
 

@@ -8,7 +8,7 @@ from pathlib import Path
 import numpy as np
 import torch
 
-from .config import TrainConfig
+from config.config import TrainConfig
 from .data import make_dataloaders
 from .evaluate import (
     collect_predictions,

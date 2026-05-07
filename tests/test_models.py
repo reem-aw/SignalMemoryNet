@@ -1,7 +1,7 @@
 """Tests for the three model architectures."""
 from __future__ import annotations
 import torch
-from src.config import NUM_CLASSES, WINDOW
+from config.config import NUM_CLASSES, WINDOW
 from src.models.lstm import LSTMModel
 from src.models.mlp import MLPModel
 from src.models.rnn import RNNModel

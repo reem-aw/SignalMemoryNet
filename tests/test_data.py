@@ -4,7 +4,7 @@ from __future__ import annotations
 import numpy as np
 import torch
 
-from src.config import NUM_CLASSES, SAMPLES_PER_RECORD, WINDOW
+from config.config import NUM_CLASSES, SAMPLES_PER_RECORD, WINDOW
 from src.data import SignalWindowDataset, generate_signal, make_dataloaders
 def test_generate_signal_shapes_and_alignment():
     rng = np.random.default_rng(0)

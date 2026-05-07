@@ -6,7 +6,7 @@ from typing import Sequence
 import torch
 from torch import nn
 
-from ..config import WINDOW
+from config.config import WINDOW
 from .heads import HeadOutput, MultiTaskHead
 
 
