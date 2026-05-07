@@ -5,7 +5,7 @@ architectures: a fully-connected **MLP** (no memory), a vanilla **RNN**
 (implicit memory via hidden state), and an **LSTM** (gated long/short-term
 memory).
 
-> **Repository:** <https://github.com/afaf-gharra/SignalMemoryNet>
+> **Repository:** <https://github.com/reem-aw/SignalMemoryNet>
 >
 > **Course:** Neural Networks — HW1 (sine recognition / reconstruction)
 
