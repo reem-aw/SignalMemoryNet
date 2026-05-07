@@ -32,20 +32,7 @@ Both objectives are trained jointly with a sum of cross-entropy and MSE losses.
 
 ## 2. Theory recap
 
-### 2.1 Sampling
-By the Nyquist–Shannon theorem we must sample at $f_s \ge 2 f_{\max}$. We pick
-$f_s = 100$ Hz and frequencies $\{2, 5, 10, 20\}$ Hz so the highest frequency is
-well below Nyquist (50 Hz), guaranteeing reconstructibility.
 
-### 2.2 Signal model
-Following the HW spec we generate
-
-<img width="398" height="31" alt="image" src="https://github.com/user-attachments/assets/2fdf5fe3-0404-48f8-afee-26fe133eebbe" />
-
-
-with $A\in[0.8,1.2]$, $\varphi\in[0,2\pi)$ and $\sigma\in\{5\%,10\%,20\%\}$.
-Each record is generated **twice** with shared $A,\varphi$: once clean
-(target) and once noisy (input).
 
 ### 2.3 Memory layer / RNN
 A vanilla RNN augments each layer with a "memory layer" — at every step the
