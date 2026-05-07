@@ -42,7 +42,7 @@ Following the HW spec we generate
 <img width="398" height="31" alt="image" src="https://github.com/user-attachments/assets/2fdf5fe3-0404-48f8-afee-26fe133eebbe" />
 
 
-with $A\in[0.8,1.2]$, $\varphi\in[0,2\pi)$ and <img width="210" height="41" alt="image" src="https://github.com/user-attachments/assets/e4ab97da-e033-44ea-878a-d177d94bf6ec" />.
+with $A\in[0.8,1.2]$, $\varphi\in[0,2\pi)$ and <img width="210" height="41" alt="image" src="https://github.com/user-attachments/assets/e4ab97da-e033-44ea-878a-d177d94bf6ec" />
 Each record is generated **twice** with shared $A,\varphi$: once clean
 (target) and once noisy (input).
 
