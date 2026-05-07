@@ -173,6 +173,8 @@ report/
 
 Exercise **1**
 
+Group: **SMNGRP05**
+
 | Student | ID | Name (EN) | Name (HE) |
 |---|---|---|---|
 | 1 | 208123232 | Afaf Gharra  | עפאף גרה |
