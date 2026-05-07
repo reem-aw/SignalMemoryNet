@@ -5,7 +5,7 @@ architectures: a fully-connected **MLP** (no memory), a vanilla **RNN**
 (implicit memory via hidden state), and an **LSTM** (gated long/short-term
 memory).
 
-> **Repository:** <https://github.com/afaf-gharra/SignalMemoryNet>
+> **Repository:** <https://github.com/reem-aw/SignalMemoryNet>
 >
 > **Course:** Neural Networks — HW1 (sine recognition / reconstruction)
 
@@ -41,10 +41,12 @@ well below Nyquist (50 Hz), guaranteeing reconstructibility.
 Following the HW spec we generate
 
 $$
-s(t) \;=\; (A \pm \sigma_A)\sin\bigl(2\pi f t + \varphi\bigr) + \eta(t),\qquad \eta(t)\sim\mathcal{N}(0,(\sigma\cdot A)^2)
+s(t)=A\sin(2\pi f t+\varphi)+\eta(t),
+\qquad
+\eta(t)\sim\mathcal{N}(0,(\sigma\cdot A)^2)
 $$
 
-with $A\in[0.8, 1.2]$, $\varphi\in[0,2\pi)$ and $\sigma\in\{5\%, 10\%, 20\%\}$.
+with $A\in[0.8,1.2]$, $\varphi\in[0,2\pi)$ and $\sigma\in\{5\%,10\%,20\%\}$.
 Each record is generated **twice** with shared $A,\varphi$: once clean
 (target) and once noisy (input).
 
@@ -106,7 +108,7 @@ dimension 1 — directly mirroring the lecture's "10-sample context window".
   (patience = 5).
 * Best-checkpoint selection on validation loss.
 
-Run `python -m src.main --all --epochs 30` to retrain every model.
+Run `python -m src.main --model all --epochs 30` to retrain every model.
 
 ## 6. Results
 
@@ -145,6 +147,7 @@ pytest
 # Train + evaluate all three models and emit figures + metrics
 python -m src.main --model all --epochs 20
 
+```
 
 ## 8. Repository layout
 
@@ -168,12 +171,12 @@ report/
 
 ## 9. Submission
 
-Group: **SMNGRP05**, Exercise **1**, Self-score recommendation **90**.
+Exercise **1**
 
 | Student | ID | Name (EN) | Name (HE) |
 |---|---|---|---|
 | 1 | 208123232 | Afaf Gharra  | עפאף גרה |
 | 2 | 212018899 | Reem Awawdy  | רים עואודה |
 
-GitHub: <https://github.com/afaf-gharra/SignalMemoryNet>
+GitHub: <https://github.com/reem-aw/SignalMemoryNet>
 Late submission: **No**.
