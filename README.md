@@ -40,11 +40,8 @@ well below Nyquist (50 Hz), guaranteeing reconstructibility.
 ### 2.2 Signal model
 Following the HW spec we generate
 
-$$
-s(t)=A\sin(2\pi f t+\varphi)+\eta(t),
-\qquad
-\eta(t)\sim\mathcal{N}(0,(\sigma\cdot A)^2)
-$$
+<img width="398" height="31" alt="image" src="https://github.com/user-attachments/assets/2fdf5fe3-0404-48f8-afee-26fe133eebbe" />
+
 
 with $A\in[0.8,1.2]$, $\varphi\in[0,2\pi)$ and $\sigma\in\{5\%,10\%,20\%\}$.
 Each record is generated **twice** with shared $A,\varphi$: once clean
