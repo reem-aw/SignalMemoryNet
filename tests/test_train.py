@@ -8,8 +8,6 @@ from src.data import make_dataloaders
 from src.evaluate import collect_predictions, confusion_matrix
 from src.models.mlp import MLPModel
 from src.train import evaluate_loader, train_one
-
-
 def test_train_decreases_loss_on_tiny_dataset():
     cfg = TrainConfig(
         epochs=8,
@@ -32,7 +30,6 @@ def test_train_decreases_loss_on_tiny_dataset():
     history = train_one(model, train, val, cfg, device=torch.device("cpu"), verbose=False)
     assert history.train_loss[-1] < history.train_loss[0]
 
-
 def test_evaluate_loader_returns_three_metrics():
     cfg = TrainConfig(
         train_records_per_freq=1, val_records_per_freq=1, test_records_per_freq=1,
@@ -47,7 +44,6 @@ def test_evaluate_loader_returns_three_metrics():
     assert loss > 0
     assert 0.0 <= acc <= 1.0
     assert recon >= 0
-
 
 def test_confusion_matrix_shape():
     _, _, test = make_dataloaders(1, 1, 1, batch_size=8, seed=0, window_stride=20)

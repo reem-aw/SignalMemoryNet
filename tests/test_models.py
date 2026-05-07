@@ -1,13 +1,10 @@
 """Tests for the three model architectures."""
 from __future__ import annotations
-
 import torch
-
 from src.config import NUM_CLASSES, WINDOW
 from src.models.lstm import LSTMModel
 from src.models.mlp import MLPModel
 from src.models.rnn import RNNModel
-
 
 def _check_forward(model):
     x = torch.randn(8, WINDOW)
@@ -16,18 +13,14 @@ def _check_forward(model):
     assert out.recon.shape == (8, WINDOW)
     return out
 
-
 def test_mlp_forward():
     _check_forward(MLPModel())
-
 
 def test_rnn_forward():
     _check_forward(RNNModel(hidden_size=16))
 
-
 def test_lstm_forward():
     _check_forward(LSTMModel(hidden_size=16))
-
 
 def test_gradient_flow():
     for model in (MLPModel(), RNNModel(hidden_size=16), LSTMModel(hidden_size=16)):
@@ -39,7 +32,6 @@ def test_gradient_flow():
         for name, p in model.named_parameters():
             assert p.grad is not None, f"no grad for {name}"
             assert torch.isfinite(p.grad).all(), f"non-finite grad in {name}"
-
 
 def test_models_are_distinct_classes():
     a, b, c = MLPModel(), RNNModel(), LSTMModel()

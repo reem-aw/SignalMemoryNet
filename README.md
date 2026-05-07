@@ -143,11 +143,8 @@ pip install -r requirements.txt
 pytest
 
 # Train + evaluate all three models and emit figures + metrics
-python -m src.main --all --epochs 20
+python -m src.main --model all --epochs 20
 
-# Build the submission PDF (cover page + condensed report)
-python report/build_pdf.py
-```
 
 ## 8. Repository layout
 

@@ -38,7 +38,8 @@ def generate_signal(
     """Return (clean, noisy) signal arrays of shape ``(n_samples,)``.
 
     Implements ``(A ± sigma)·sin(2π f t + φ)`` plus additive Gaussian noise of
-    standard deviation ``sigma_pct * A`` on the noisy copy.  The clean copy is
+    standard deviation ``sigma_pct * A`` on the noisy copy.
+      The clean copy is
     free of additive noise but uses the same ``A`` and ``φ`` so the two copies
     are aligned sample-by-sample (HW spec item 3).
     """
